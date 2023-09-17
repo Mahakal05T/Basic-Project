@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths2</title>
+</head>
+<body>
+    <form name="form1">
+        Radius:<input type="text" name="radius"><br>
+        Side:<input type="text" name="side"><br>
+        Length:<input type="text" name="rectl"><br>
+        Breadth:<input type="text" name="rectb"><br>
+        <input type="button" name="calculate" value="Calculate Area" onclick="calculateArea()">
+      </form>
+      <script language="javascript">
+        function calculateArea(){
+          var r, s, l, b, Carea, Sarea, Rarea;
+          r = parseInt(form1.radius.value);
+          Carea = 3.14*r**2;
+          
+          s = parseInt(form1.side.value);
+          Sarea = 4*s;
+          
+          l= parseInt(form1.rectl.value);
+          b= parseInt(form1.rectb.value);
+          Rarea = l*b;
+          
+          
+          document.write("Area of Circle is "+ Carea + "Whose radius is "+r);
+          document.write("<br>Area of Square is "+ Sarea + "Whose side is "+s);
+          document.write("<br>Area of Rectangle is "+ Rarea + "Whose length is "+l+" and breadth is "+b);
+        }
+      </script>
+</body>
+</html>
