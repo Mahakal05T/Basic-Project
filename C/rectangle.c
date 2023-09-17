@@ -9,7 +9,7 @@ int main(){
     scanf("%f",&b);
 
     area=l*b;
-    printf("area of a rectangle is: %f",area);
+    printf("area of a rectangle is: %.2f",area);
 
     return 0;
 }
