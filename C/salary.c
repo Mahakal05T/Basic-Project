@@ -6,7 +6,7 @@ int main()
 {
   int sal;
   float bonus=0;
-  printf("enter your salary: ");
+  printf("enter your salary");
   scanf("%d",&sal);
   
   if(sal<=10000)
