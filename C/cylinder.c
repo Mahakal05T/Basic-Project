@@ -10,7 +10,7 @@ int main (){
     scanf("%f",&h);
 
     v = Pi*r*r*h;
-    printf("volume of cylinder: %f",v);
+    printf("volume of cylinder: %0.2f",v);
 
     return 0;
 }
