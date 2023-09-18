@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-//Compiler version gcc  6.3.0
-
 int main()
 {
   int a,b,t1,t2,lcm,hcf;
