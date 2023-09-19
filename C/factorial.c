@@ -5,9 +5,14 @@ int main()
  printf("Enter the number: ");
  scanf("%d",&n);
 
-for(i=1;i<=n;i++){    
+ if(n < 0){
+    printf("\nFactorial of a negative number is not defined");
+ }
+else{
+    for(i=1;i<=n;i++){    
       fact=fact*i;    
-  }    
-  printf("Factorial of %d = %d ", n,fact);    
+   }    
+   printf("Factorial of %d = %d ", n,fact);  
+}  
 return 0;  
 }   
