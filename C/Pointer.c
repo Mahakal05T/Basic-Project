@@ -6,4 +6,4 @@ int main(){
 
     int* ptr = &myage;
     printf("value of myage: %d\n", myage);
-}s
+}

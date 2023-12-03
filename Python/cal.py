@@ -10,7 +10,7 @@ class check():
         return (self.n)
 
 obj=check()
-choice=1
+choice=10
 while choice!=0: 
     print("0. Exit")
     print("1. Add")
