@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prime or not prime</title>
+</head>
+<body>
+    <script>
+var a = prompt("enter a number");
+var flag="yes"
+
+for(var i =2; i < a; i++){
+    if(i!=a && a%i == 0){
+        flag = "no";
+        break;
+    }
+    else{
+        continue;
+    }
+ }
+if(flag == "yes"){
+    document.write(a+ "is a prime number.");
+ }
+else{
+    document.write(a+ "is not a prime number.");
+ }
+    </script>
+</body>
+</html>
