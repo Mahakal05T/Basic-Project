@@ -9,9 +9,11 @@ yt = YouTube(
 # extract only audio
 video = yt.streams.filter(only_audio=True).first()
 
-# check for destination to save file
-print("Enter the destination (leave blank for current directory)")
-destination = str(input(">> ")) or '.'
+# Specify the destination directly
+destination = r"C:\Users\ayush\Music" 
+
+# Ensure the output directory exists
+os.makedirs(destination, exist_ok=True)
 
 # download the file
 out_file = video.download(output_path=destination)

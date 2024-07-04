@@ -15,21 +15,21 @@
       </form>
       <script language="javascript">
         function calculateArea(){
-          var r, s, l, b, Carea, Sarea, Rarea;
+          var r, s, l, b, Circle, Square, Rectangle;
           r = parseInt(form1.radius.value);
-          Carea = 3.14*r**2;
+          Circle = 3.14*r**2;
           
           s = parseInt(form1.side.value);
-          Sarea = 4*s;
+          Square = 4*s;
           
           l= parseInt(form1.rectl.value);
           b= parseInt(form1.rectb.value);
-          Rarea = l*b;
+          Rectangle = l*b;
           
           
-          document.write("Area of Circle is "+ Carea + "Whose radius is "+r);
-          document.write("<br>Area of Square is "+ Sarea + "Whose side is "+s);
-          document.write("<br>Area of Rectangle is "+ Rarea + "Whose length is "+l+" and breadth is "+b);
+          document.write("Area of Circle is "+ Circle + "Whose radius is "+r);
+          document.write("<br>Area of Square is "+ Square + "Whose side is "+s);
+          document.write("<br>Area of Rectangle is "+ Rectangle + "Whose length is "+l+" and breadth is "+b);
         }
       </script>
 </body>
